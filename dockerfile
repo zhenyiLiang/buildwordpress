@@ -3,10 +3,10 @@ FROM centos
 LABEL version="1.0"
 LABEL maintainer="2665235383lzy@gmail.com"
 
-ADD setup.sh /
-ADD privileges.sql /
-RUN /setup.sh
+COPY setup.sh /
+COPY privileges.sql /
+COPY /setup.sh
 
-ADD wordpress /wordpress
-ADD nginx.conf /etc/nginx/
-ADD startwordpress.sh /
+COPY wordpress /wordpress
+COPY nginx.conf /etc/nginx/
+COPY startwordpress.sh /
