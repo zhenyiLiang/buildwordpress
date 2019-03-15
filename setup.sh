@@ -8,3 +8,5 @@ mysql_install_db --user=mysql --basedir=/usr/ --ldata=/var/lib/mysql/
 sleep 10
 mysql < /privileges.sql
 
+yum remove epel-release
+
