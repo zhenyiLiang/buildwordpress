@@ -11,4 +11,5 @@ COPY wordpress /wordpress
 COPY nginx.conf /etc/nginx/
 COPY startwordpress.sh /
 
+ENTRYPOINT ["bash","/startwordpress.sh"]
 EXPOSE 8090
