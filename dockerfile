@@ -5,7 +5,7 @@ LABEL maintainer="2665235383lzy@gmail.com"
 
 COPY setup.sh /
 COPY privileges.sql /
-COPY /setup.sh
+RUN /setup.sh
 
 COPY wordpress /wordpress
 COPY nginx.conf /etc/nginx/
