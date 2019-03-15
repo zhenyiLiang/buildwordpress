@@ -10,3 +10,5 @@ COPY /setup.sh
 COPY wordpress /wordpress
 COPY nginx.conf /etc/nginx/
 COPY startwordpress.sh /
+
+EXPOSE 8090
